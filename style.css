@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    position: relative;
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 105, 180, 0.8);
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.neon-text {
+    color: #fff;
+    text-align: center;
+    text-shadow:
+        0 0 5px #ff00de,
+        0 0 10px #ff00de,
+        0 0 20px #ff00de,
+        0 0 40px #00ffff,
+        0 0 80px #00ffff;
+}
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.menu-btn {
+    background: rgba(0, 191, 255, 0.8);
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
